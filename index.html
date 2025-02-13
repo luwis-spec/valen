@@ -38,8 +38,11 @@
                 </form>
 
                 <form action="#" class="signup">
-                    <h2>- Tawag ko sa'yo</h2>
-                    <h2>- Tawag mo rin sa sarili mo (minsan)</h2>
+                    <h4>- Tawag ko sa'yo.</h4>
+                    <h4>- lowercase lang lahat?</h4>
+                    <h4>- Tawag mo rin sa sarili mo (minsan).</h4>
+                    <h4>- Ikaw na ikaw 'yan.</h4>
+                    <h4>- dami na masyadong clue, ok na yan.</h4>
                 </form>
             </div>
 
@@ -50,6 +53,8 @@
     <script>
         $(document).ready(function() {
             function validateLogin() {
+                event.preventDefault();
+                
                 const password = $("#password").val();
                 
                 if (password === "") {
@@ -59,7 +64,7 @@
                         icon: "warning",
                         confirmButtonColor: "#ff6699"
                     });
-                } else if (password === "wis") {
+                } else if (password === "disneyprincess") {
                     Swal.fire({
                         title: "GALING NAMAN NI DISNEY PRINCESS!",
                         text: "Hope you like it!",

@@ -181,3 +181,17 @@
     font-weight: 500;
     cursor: pointer;
     }
+
+    .lockout-message {
+        color: rgb(0, 0, 0); /* Make text white */
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        background: -webkit-linear-gradient(right, #b3ffcc, #99ffcc, #80ffcc, #66ffcc);
+        padding: 8px 12px;
+        border-radius: 6px;
+        display: none; /* Initially hidden */
+        margin-top: 25px; /* Small space from input field */
+        margin-bottom: 10px; /* Keeps spacing balanced */
+    }
